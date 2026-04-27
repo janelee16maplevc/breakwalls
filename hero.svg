@@ -1,0 +1,190 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080">
+  <defs>
+    <!-- Blur filters for atmospheric bokeh effect -->
+    <filter id="blur-xl" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="80"/>
+    </filter>
+    <filter id="blur-lg" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="48"/>
+    </filter>
+    <filter id="blur-md" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="28"/>
+    </filter>
+    <filter id="blur-sm" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="12"/>
+    </filter>
+    <filter id="grain" x="0%" y="0%" width="100%" height="100%" color-interpolation-filters="sRGB">
+      <feTurbulence type="fractalNoise" baseFrequency="0.72" numOctaves="4" stitchTiles="stitch" result="noise"/>
+      <feColorMatrix type="saturate" values="0" in="noise" result="grayNoise"/>
+      <feBlend in="SourceGraphic" in2="grayNoise" mode="overlay" result="blended"/>
+      <feComposite in="blended" in2="SourceGraphic" operator="in"/>
+    </filter>
+
+    <!-- Gradients -->
+    <radialGradient id="grad-coral" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#D4532A" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#D4532A" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="grad-teal" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#1A8C80" stop-opacity="0.85"/>
+      <stop offset="100%" stop-color="#1A8C80" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="grad-violet" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#7038A8" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#7038A8" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="grad-gold" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#C89030" stop-opacity="0.75"/>
+      <stop offset="100%" stop-color="#C89030" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="grad-cream" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#EAD8B8" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#EAD8B8" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="grad-rose" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#C84068" stop-opacity="0.7"/>
+      <stop offset="100%" stop-color="#C84068" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="grad-cyan" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#18B8D0" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#18B8D0" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="vignette" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0D0B14" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#0D0B14" stop-opacity="0.7"/>
+    </linearGradient>
+    <linearGradient id="vignette-left" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#0D0B14" stop-opacity="0.5"/>
+      <stop offset="35%" stop-color="#0D0B14" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1920" height="1080" fill="#0D0B14"/>
+
+  <!-- ── COLOUR ATMOSPHERE LAYER ── -->
+
+  <!-- Coral — top right, large -->
+  <ellipse cx="1520" cy="180" rx="580" ry="480" fill="url(#grad-coral)" filter="url(#blur-xl)"/>
+
+  <!-- Teal — left, mid -->
+  <ellipse cx="240" cy="620" rx="500" ry="420" fill="url(#grad-teal)" filter="url(#blur-xl)"/>
+
+  <!-- Violet — bottom right -->
+  <ellipse cx="1650" cy="900" rx="520" ry="380" fill="url(#grad-violet)" filter="url(#blur-xl)"/>
+
+  <!-- Gold — center top -->
+  <ellipse cx="860" cy="240" rx="360" ry="300" fill="url(#grad-gold)" filter="url(#blur-lg)"/>
+
+  <!-- Cream — center -->
+  <ellipse cx="980" cy="580" rx="300" ry="260" fill="url(#grad-cream)" filter="url(#blur-lg)"/>
+
+  <!-- Rose — mid right -->
+  <ellipse cx="1280" cy="680" rx="340" ry="280" fill="url(#grad-rose)" filter="url(#blur-lg)"/>
+
+  <!-- Cyan — top left -->
+  <ellipse cx="380" cy="200" rx="280" ry="240" fill="url(#grad-cyan)" filter="url(#blur-lg)"/>
+
+  <!-- Secondary coral — lower left for warmth -->
+  <ellipse cx="560" cy="920" rx="400" ry="300" fill="url(#grad-coral)" filter="url(#blur-xl)" opacity="0.5"/>
+
+  <!-- Secondary violet — top center -->
+  <ellipse cx="960" cy="80" rx="420" ry="220" fill="url(#grad-violet)" filter="url(#blur-lg)" opacity="0.5"/>
+
+  <!-- ── ORGANIC ACCENT SHAPES ── -->
+
+  <!-- Flowing coral ribbon — sweeps across upper third -->
+  <path d="M -40 200 C 200 80, 480 320, 720 200 S 1100 40, 1400 180 S 1700 320, 1960 200"
+    fill="none" stroke="#E0643A" stroke-width="3" opacity="0.35" filter="url(#blur-sm)"/>
+  <path d="M -40 220 C 200 100, 480 340, 720 220 S 1100 60, 1400 200 S 1700 340, 1960 220"
+    fill="none" stroke="#E0643A" stroke-width="1.5" opacity="0.5"/>
+
+  <!-- Teal arc — lower left sweep -->
+  <path d="M -40 900 C 180 780, 400 680, 600 760 S 900 900, 1100 820"
+    fill="none" stroke="#2AC4B4" stroke-width="2" opacity="0.4" filter="url(#blur-sm)"/>
+
+  <!-- Gold fine line — diagonal -->
+  <path d="M 800 0 C 860 200, 920 400, 800 600 S 640 820, 720 1080"
+    fill="none" stroke="#D4A840" stroke-width="1" opacity="0.5"/>
+
+  <!-- Abstract organic form — teal, center-left -->
+  <path d="M 120 400 C 180 300, 320 280, 380 380 C 440 480, 360 600, 260 620 C 160 640, 80 560, 80 480 C 80 420, 100 440, 120 400 Z"
+    fill="#1A8C80" opacity="0.18" filter="url(#blur-md)"/>
+
+  <!-- Abstract organic form — coral, upper right -->
+  <path d="M 1480 60 C 1580 120, 1680 200, 1700 320 C 1720 440, 1620 500, 1520 460 C 1420 420, 1380 300, 1400 200 C 1420 120, 1460 40, 1480 60 Z"
+    fill="#D4532A" opacity="0.22" filter="url(#blur-md)"/>
+
+  <!-- ── FUTURISTIC GRID — very faint ── -->
+  <g opacity="0.06" stroke="#FFFFFF" stroke-width="0.5">
+    <!-- Vertical lines -->
+    <line x1="192" y1="0" x2="192" y2="1080"/>
+    <line x1="384" y1="0" x2="384" y2="1080"/>
+    <line x1="576" y1="0" x2="576" y2="1080"/>
+    <line x1="768" y1="0" x2="768" y2="1080"/>
+    <line x1="960" y1="0" x2="960" y2="1080"/>
+    <line x1="1152" y1="0" x2="1152" y2="1080"/>
+    <line x1="1344" y1="0" x2="1344" y2="1080"/>
+    <line x1="1536" y1="0" x2="1536" y2="1080"/>
+    <line x1="1728" y1="0" x2="1728" y2="1080"/>
+    <!-- Horizontal lines -->
+    <line x1="0" y1="108" x2="1920" y2="108"/>
+    <line x1="0" y1="216" x2="1920" y2="216"/>
+    <line x1="0" y1="324" x2="1920" y2="324"/>
+    <line x1="0" y1="432" x2="1920" y2="432"/>
+    <line x1="0" y1="540" x2="1920" y2="540"/>
+    <line x1="0" y1="648" x2="1920" y2="648"/>
+    <line x1="0" y1="756" x2="1920" y2="756"/>
+    <line x1="0" y1="864" x2="1920" y2="864"/>
+    <line x1="0" y1="972" x2="1920" y2="972"/>
+  </g>
+
+  <!-- Grid intersection dots -->
+  <g opacity="0.12" fill="#FFFFFF">
+    <circle cx="192" cy="108" r="1.5"/><circle cx="384" cy="108" r="1.5"/><circle cx="576" cy="108" r="1.5"/>
+    <circle cx="768" cy="108" r="1.5"/><circle cx="960" cy="108" r="1.5"/><circle cx="1152" cy="108" r="1.5"/>
+    <circle cx="1344" cy="108" r="1.5"/><circle cx="1536" cy="108" r="1.5"/><circle cx="1728" cy="108" r="1.5"/>
+    <circle cx="192" cy="324" r="1.5"/><circle cx="384" cy="324" r="1.5"/><circle cx="576" cy="324" r="1.5"/>
+    <circle cx="768" cy="324" r="1.5"/><circle cx="960" cy="324" r="1.5"/><circle cx="1152" cy="324" r="1.5"/>
+    <circle cx="1344" cy="324" r="1.5"/><circle cx="1536" cy="324" r="1.5"/><circle cx="1728" cy="324" r="1.5"/>
+    <circle cx="192" cy="540" r="1.5"/><circle cx="384" cy="540" r="1.5"/><circle cx="576" cy="540" r="1.5"/>
+    <circle cx="768" cy="540" r="1.5"/><circle cx="960" cy="540" r="1.5"/><circle cx="1152" cy="540" r="1.5"/>
+    <circle cx="1344" cy="540" r="1.5"/><circle cx="1536" cy="540" r="1.5"/><circle cx="1728" cy="540" r="1.5"/>
+    <circle cx="192" cy="756" r="1.5"/><circle cx="384" cy="756" r="1.5"/><circle cx="576" cy="756" r="1.5"/>
+    <circle cx="768" cy="756" r="1.5"/><circle cx="960" cy="756" r="1.5"/><circle cx="1152" cy="756" r="1.5"/>
+    <circle cx="1344" cy="756" r="1.5"/><circle cx="1536" cy="756" r="1.5"/><circle cx="1728" cy="756" r="1.5"/>
+    <circle cx="192" cy="972" r="1.5"/><circle cx="384" cy="972" r="1.5"/><circle cx="576" cy="972" r="1.5"/>
+    <circle cx="768" cy="972" r="1.5"/><circle cx="960" cy="972" r="1.5"/><circle cx="1152" cy="972" r="1.5"/>
+    <circle cx="1344" cy="972" r="1.5"/><circle cx="1536" cy="972" r="1.5"/><circle cx="1728" cy="972" r="1.5"/>
+  </g>
+
+  <!-- ── BRIGHT PARTICLE HIGHLIGHTS ── -->
+  <g filter="url(#blur-sm)">
+    <circle cx="1480" cy="140" r="4" fill="#F0C060" opacity="0.9"/>
+    <circle cx="340"  cy="380" r="3" fill="#60E0D0" opacity="0.8"/>
+    <circle cx="920"  cy="280" r="2.5" fill="#F0C060" opacity="0.7"/>
+    <circle cx="1680" cy="720" r="3.5" fill="#D080C0" opacity="0.8"/>
+    <circle cx="580"  cy="820" r="3" fill="#E08060" opacity="0.75"/>
+    <circle cx="1200" cy="480" r="2" fill="#80D8F0" opacity="0.7"/>
+    <circle cx="760"  cy="160" r="2.5" fill="#C8A840" opacity="0.8"/>
+  </g>
+  <!-- Sharp specular dots -->
+  <circle cx="1480" cy="140" r="1.5" fill="#FFFFFF" opacity="0.9"/>
+  <circle cx="340"  cy="380" r="1" fill="#FFFFFF" opacity="0.8"/>
+  <circle cx="920"  cy="280" r="1" fill="#FFFFFF" opacity="0.7"/>
+  <circle cx="1680" cy="720" r="1.2" fill="#FFFFFF" opacity="0.8"/>
+  <circle cx="580"  cy="820" r="1" fill="#FFFFFF" opacity="0.75"/>
+
+  <!-- ── VIGNETTES for depth ── -->
+  <rect width="1920" height="1080" fill="url(#vignette)"/>
+  <rect width="1920" height="1080" fill="url(#vignette-left)"/>
+  <!-- Radial vignette edge -->
+  <radialGradient id="vignette-radial" cx="50%" cy="50%" r="70%">
+    <stop offset="0%" stop-color="#0D0B14" stop-opacity="0"/>
+    <stop offset="100%" stop-color="#0D0B14" stop-opacity="0.55"/>
+  </radialGradient>
+  <rect width="1920" height="1080" fill="url(#vignette-radial)"/>
+
+  <!-- ── GRAIN OVERLAY ── -->
+  <rect width="1920" height="1080" fill="transparent" filter="url(#grain)" opacity="0.08"/>
+</svg>
