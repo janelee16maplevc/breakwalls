@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Breakwalls — AI Systems for Health & Wellness</title>
+  <title>Breakwalls — AI Infrastructure for Multi-Location Businesses</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,700&family=Lora:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet" />
@@ -38,17 +38,10 @@
     #announce-bar {
       background: var(--yellow);
       padding: 10px 48px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
+      display: flex; align-items: center; justify-content: center;
       position: relative;
     }
-    #announce-bar p {
-      font-family: var(--sans);
-      font-size: 0.78rem;
-      color: var(--black);
-      text-align: center;
-    }
+    #announce-bar p { font-family: var(--sans); font-size: 0.78rem; color: var(--black); text-align: center; }
     #announce-bar a { color: var(--black); text-decoration: underline; }
     .announce-close {
       position: absolute; right: 20px; top: 50%; transform: translateY(-50%);
@@ -60,14 +53,10 @@
     .site-header {
       position: sticky; top: 0; z-index: 100;
       background: rgba(255,255,255,0.95);
-      backdrop-filter: blur(12px);
-      -webkit-backdrop-filter: blur(12px);
+      backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px);
       border-bottom: 1px solid var(--rule);
     }
-    nav {
-      display: flex; align-items: center; justify-content: space-between;
-      padding: 0 28px; height: 56px;
-    }
+    nav { display: flex; align-items: center; justify-content: space-between; padding: 0 28px; height: 56px; }
     .nav-links { display: flex; gap: 0; list-style: none; }
     .nav-links a {
       font-family: var(--sans); font-size: 0.82rem; font-weight: 400;
@@ -77,10 +66,7 @@
     .nav-links a:hover { opacity: 0.45; }
     .nav-links a.active { font-weight: 500; }
     .nav-right { display: flex; align-items: center; gap: 24px; }
-    .nav-email {
-      font-family: var(--sans); font-size: 0.78rem; color: var(--mid);
-      text-decoration: none; transition: color 0.15s;
-    }
+    .nav-email { font-family: var(--sans); font-size: 0.78rem; color: var(--mid); text-decoration: none; transition: color 0.15s; }
     .nav-email:hover { color: var(--text); }
     .nav-cta {
       font-family: var(--sans); font-size: 0.78rem; font-weight: 400;
@@ -99,46 +85,24 @@
       position: relative; width: 100%; height: calc(100vh - 56px); overflow: hidden;
       background: #C4BFB9;
     }
-    .hero-img {
-      width: 100%; height: 100%; object-fit: cover;
-      object-position: center top; display: block;
-    }
-    .hero-overlay {
-      position: absolute; inset: 0;
-      background: linear-gradient(to bottom, rgba(0,0,0,0.08) 0%, rgba(0,0,0,0.32) 100%);
-    }
-    .hero-text {
-      position: absolute; bottom: 0; left: 0; right: 0;
-      padding: 0 0 48px 0;
-    }
+    .hero-img { width: 100%; height: 100%; object-fit: cover; object-position: center top; display: block; }
+    .hero-overlay { position: absolute; inset: 0; background: linear-gradient(to bottom, rgba(0,0,0,0.08) 0%, rgba(0,0,0,0.32) 100%); }
+    .hero-text { position: absolute; bottom: 0; left: 0; right: 0; padding: 0 0 48px 0; }
     .hero-wordmark {
-      font-family: var(--display);
-      font-size: clamp(88px, 15.5vw, 210px);
-      font-weight: 700;
-      line-height: 0.82;
-      letter-spacing: -0.03em;
-      color: var(--yellow);
-      padding-left: 0;
-      margin-bottom: 28px;
-      display: block;
+      font-family: var(--display); font-size: clamp(88px, 15.5vw, 210px);
+      font-weight: 700; line-height: 0.82; letter-spacing: -0.03em;
+      color: var(--yellow); margin-bottom: 28px; display: block;
     }
     .hero-wordmark em { font-style: italic; }
-    .hero-tagline-row {
-      display: flex; align-items: flex-end; justify-content: space-between;
-      padding: 0 28px; gap: 40px;
-    }
+    .hero-tagline-row { display: flex; align-items: flex-end; justify-content: space-between; padding: 0 28px; gap: 40px; }
     .hero-tagline {
-      font-family: var(--display);
-      font-size: clamp(1.1rem, 2vw, 1.6rem);
-      font-weight: 300;
-      font-style: italic;
-      color: rgba(255,255,255,0.88);
-      max-width: 540px;
-      line-height: 1.25;
+      font-family: var(--display); font-size: clamp(1.1rem, 2vw, 1.6rem);
+      font-weight: 300; font-style: italic; color: rgba(255,255,255,0.88);
+      max-width: 540px; line-height: 1.25;
     }
-    .hero-ctas {
-      display: flex; gap: 12px; flex-shrink: 0; flex-wrap: wrap;
-    }
+    .hero-sub { font-family: var(--sans); font-size: 0.78rem; color: rgba(255,255,255,0.55); margin-top: 12px; line-height: 1.65; max-width: 480px; }
+    .hero-micro { font-family: var(--sans); font-size: 0.68rem; color: rgba(255,255,255,0.32); margin-top: 10px; letter-spacing: 0.02em; }
+    .hero-ctas { display: flex; gap: 12px; flex-shrink: 0; flex-wrap: wrap; }
     .btn-yellow {
       font-family: var(--sans); font-size: 0.75rem; font-weight: 400;
       letter-spacing: 0.04em; background: var(--yellow); color: var(--black);
@@ -158,201 +122,89 @@
     /* ── SECTION BASE ── */
     .section { border-top: 1px solid var(--rule); }
     .section-inner { padding: 80px 28px; }
-    .section-label {
-      font-family: var(--sans); font-size: 0.68rem;
-      letter-spacing: 0.1em; text-transform: uppercase;
-      color: var(--mid); margin-bottom: 48px;
-    }
+    .section-label { font-family: var(--sans); font-size: 0.68rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--mid); margin-bottom: 48px; }
 
-    /* ── SUB-HERO PROOF ── */
-    .proof-section { border-top: 1px solid var(--rule); background: var(--faint); }
-    .proof-inner {
-      padding: 52px 28px;
-      display: flex; align-items: baseline; gap: 56px; flex-wrap: wrap;
+    /* ── CLIENTS SECTION ── */
+    .clients-section { border-top: 1px solid var(--rule); }
+    .clients-inner { padding: 80px 28px; }
+    .clients-desc {
+      font-family: var(--display); font-size: clamp(1rem, 1.8vw, 1.3rem);
+      font-weight: 400; color: var(--text); letter-spacing: -0.01em;
+      line-height: 1.4; margin-bottom: 48px;
     }
-    .proof-label {
-      font-family: var(--sans); font-size: 0.72rem;
-      letter-spacing: 0.1em; text-transform: uppercase; color: var(--mid);
-      white-space: nowrap; flex-shrink: 0;
-    }
-    .proof-list {
-      display: flex; gap: 40px; flex-wrap: wrap; list-style: none;
-    }
-    .proof-list li {
-      font-family: var(--display); font-size: 1.05rem; font-weight: 400;
-      color: var(--text); letter-spacing: -0.01em;
-    }
+    .clients-grid { display: grid; grid-template-columns: repeat(5, 1fr); border-top: 1px solid var(--rule); }
+    .client-card { text-decoration: none; display: block; overflow: hidden; border-right: 1px solid var(--rule); }
+    .client-card:last-child { border-right: none; }
+    .client-card-img-wrap { overflow: hidden; aspect-ratio: 4/3; }
+    .client-card-img { width: 100%; height: 100%; object-fit: cover; object-position: center top; display: block; transition: transform 0.6s ease; }
+    .client-card:hover .client-card-img { transform: scale(1.04); }
+    .client-card-info { padding: 16px 20px 24px; border-top: 1px solid var(--rule); display: flex; align-items: center; justify-content: space-between; gap: 8px; }
+    .client-card-logo-img { height: 30px; width: auto; display: block; filter: grayscale(1); max-width: 120px; object-fit: contain; }
+    .client-card-logo-text { font-family: var(--display); font-size: 0.95rem; font-weight: 400; letter-spacing: 0.03em; color: var(--text); }
+    .client-card-link { font-family: var(--sans); font-size: 0.6rem; color: var(--mid); letter-spacing: 0.06em; white-space: nowrap; transition: color 0.2s; }
+    .client-card:hover .client-card-link { color: var(--text); }
 
     /* ── THE PROBLEM ── */
-    .problem-grid {
-      display: grid; grid-template-columns: 1fr 1fr; gap: 80px;
-      align-items: start;
-    }
-    .problem-headline {
-      font-family: var(--display);
-      font-size: clamp(2.4rem, 4.5vw, 4.2rem);
-      font-weight: 400; letter-spacing: -0.03em;
-      line-height: 1.0;
-    }
+    .problem-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: start; }
+    .problem-headline { font-family: var(--display); font-size: clamp(2.4rem, 4.5vw, 4.2rem); font-weight: 400; letter-spacing: -0.03em; line-height: 1.0; }
     .problem-headline em { font-style: italic; }
     .problem-right { padding-top: 8px; }
     .problem-list { list-style: none; }
-    .problem-list li {
-      font-family: var(--body); font-size: 0.9rem;
-      color: var(--mid); line-height: 1.7;
-      padding: 14px 0; border-bottom: 1px solid var(--rule);
-      display: flex; align-items: baseline; gap: 12px;
-    }
-    .problem-list li::before {
-      content: '—'; color: var(--mid); font-size: 0.75rem; flex-shrink: 0;
-    }
+    .problem-list li { font-family: var(--body); font-size: 0.9rem; color: var(--mid); line-height: 1.7; padding: 14px 0; border-bottom: 1px solid var(--rule); display: flex; align-items: baseline; gap: 12px; }
+    .problem-list li::before { content: '—'; color: var(--mid); font-size: 0.75rem; flex-shrink: 0; }
     .problem-list li:first-child { border-top: 1px solid var(--rule); }
-    .problem-closer {
-      font-family: var(--display);
-      font-size: clamp(1.4rem, 2.5vw, 2.2rem);
-      font-weight: 400; font-style: italic;
-      margin-top: 48px; letter-spacing: -0.02em; line-height: 1.15;
-    }
+    .problem-closer { font-family: var(--display); font-size: clamp(1.4rem, 2.5vw, 2.2rem); font-weight: 400; font-style: italic; margin-top: 48px; letter-spacing: -0.02em; line-height: 1.15; }
 
-    /* ── POSITIONING ── */
-    .positioning-section { border-top: 1px solid var(--rule); background: #D6E8F5; }
+    /* ── FOUNDER CALLOUT ── */
+    .founder-callout-section { border-top: 1px solid var(--rule); background: var(--black); }
+    .founder-callout-inner { padding: 100px 28px; max-width: 860px; }
+    .founder-callout-overline { font-family: var(--sans); font-size: 0.68rem; letter-spacing: 0.1em; text-transform: uppercase; color: rgba(255,255,255,0.3); margin-bottom: 48px; }
+    .founder-callout-headline {
+      font-family: var(--display); font-size: clamp(2.8rem, 6vw, 6rem);
+      font-weight: 400; letter-spacing: -0.04em; line-height: 0.92;
+      color: var(--white); margin-bottom: 48px;
+    }
+    .founder-callout-headline em { font-style: italic; color: var(--yellow); }
+    .founder-callout-body { font-family: var(--body); font-size: 0.95rem; color: rgba(255,255,255,0.45); line-height: 1.9; max-width: 480px; margin-bottom: 40px; }
+
+    /* ── SOLUTION / POSITIONING ── */
+    .positioning-section { border-top: 1px solid var(--rule); background: #0D2240; }
     .positioning-inner { padding: 100px 28px; }
-    .positioning-label {
-      font-family: var(--sans); font-size: 0.68rem;
-      letter-spacing: 0.1em; text-transform: uppercase;
-      color: rgba(255,255,255,0.3); margin-bottom: 48px;
-    }
-    .positioning-headline {
-      font-family: var(--display);
-      font-size: clamp(3rem, 7vw, 7.5rem);
-      font-weight: 400; letter-spacing: -0.04em;
-      line-height: 0.9; color: var(--white); margin-bottom: 64px;
-    }
+    .positioning-label { font-family: var(--sans); font-size: 0.68rem; letter-spacing: 0.1em; text-transform: uppercase; color: rgba(255,255,255,0.3); margin-bottom: 48px; }
+    .positioning-headline { font-family: var(--display); font-size: clamp(3rem, 7vw, 7.5rem); font-weight: 400; letter-spacing: -0.04em; line-height: 0.9; color: var(--white); margin-bottom: 64px; }
     .positioning-headline em { font-style: italic; color: var(--yellow); }
-    .positioning-not {
-      font-family: var(--body); font-size: 0.9rem;
-      color: rgba(255,255,255,0.35); font-style: italic;
-      margin-bottom: 40px;
-    }
+    .positioning-not { font-family: var(--body); font-size: 0.9rem; color: rgba(255,255,255,0.35); font-style: italic; margin-bottom: 40px; }
     .positioning-list { list-style: none; }
-    .positioning-list li {
-      font-family: var(--body); font-size: 1rem;
-      color: rgba(255,255,255,0.65); line-height: 1.6;
-      padding: 16px 0; border-bottom: 1px solid rgba(255,255,255,0.08);
-      display: flex; gap: 16px; align-items: baseline;
-    }
+    .positioning-list li { font-family: var(--body); font-size: 1rem; color: rgba(255,255,255,0.65); line-height: 1.6; padding: 16px 0; border-bottom: 1px solid rgba(255,255,255,0.08); display: flex; gap: 16px; align-items: baseline; }
     .positioning-list li:first-child { border-top: 1px solid rgba(255,255,255,0.08); }
-    .positioning-list li::before {
-      content: '→'; color: var(--yellow); font-size: 0.75rem; flex-shrink: 0;
-      font-family: var(--sans);
-    }
+    .positioning-list li::before { content: '→'; color: var(--yellow); font-size: 0.75rem; flex-shrink: 0; font-family: var(--sans); }
+    .positioning-closer { font-family: var(--display); font-size: clamp(1.2rem, 2vw, 1.8rem); font-weight: 400; font-style: italic; color: rgba(255,255,255,0.45); margin-top: 56px; letter-spacing: -0.02em; line-height: 1.2; }
 
     /* ── PROCESS ── */
-    .process-grid {
-      display: grid; grid-template-columns: repeat(4, 1fr);
-    }
-    .process-card {
-      padding: 0 40px 0 0; margin-right: 40px;
-      border-right: 1px solid var(--rule);
-    }
+    .process-grid { display: grid; grid-template-columns: repeat(4, 1fr); }
+    .process-card { padding: 0 40px 0 0; margin-right: 40px; border-right: 1px solid var(--rule); }
     .process-card:last-child { border-right: none; padding-right: 0; margin-right: 0; }
-    .process-num {
-      font-family: var(--display); font-size: 4rem; font-weight: 300;
-      letter-spacing: -0.04em; line-height: 1; color: var(--rule);
-      margin-bottom: 16px;
-    }
-    .process-title {
-      font-family: var(--display); font-size: 1.6rem; font-weight: 400;
-      letter-spacing: -0.02em; margin-bottom: 16px;
-    }
-    .process-subtitle {
-      font-family: var(--body); font-size: 0.8rem; font-style: italic;
-      color: var(--mid); margin-bottom: 20px;
-    }
+    .process-num { font-family: var(--display); font-size: 4rem; font-weight: 300; letter-spacing: -0.04em; line-height: 1; color: var(--rule); margin-bottom: 16px; }
+    .process-title { font-family: var(--display); font-size: 1.6rem; font-weight: 400; letter-spacing: -0.02em; margin-bottom: 16px; }
+    .process-subtitle { font-family: var(--body); font-size: 0.8rem; font-style: italic; color: var(--mid); margin-bottom: 20px; }
     .process-items { list-style: none; }
-    .process-items li {
-      font-family: var(--body); font-size: 0.8rem; color: var(--mid);
-      padding: 7px 0; border-bottom: 1px solid var(--rule);
-    }
+    .process-items li { font-family: var(--body); font-size: 0.8rem; color: var(--mid); padding: 7px 0; border-bottom: 1px solid var(--rule); }
     .process-items li:first-child { border-top: 1px solid var(--rule); }
 
     /* ── USE CASES ── */
-    .use-cases-grid {
-      display: grid; grid-template-columns: 1fr 1fr; gap: 0;
-    }
-    .use-case-row {
-      display: flex; align-items: baseline; gap: 24px;
-      padding: 24px 0; border-bottom: 1px solid var(--rule);
-    }
+    .use-cases-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 0; }
+    .use-case-row { display: flex; align-items: baseline; gap: 24px; padding: 24px 0; border-bottom: 1px solid var(--rule); }
     .use-case-row:nth-child(odd) { padding-right: 40px; border-right: 1px solid var(--rule); }
     .use-case-row:nth-child(even) { padding-left: 40px; }
-    .use-case-name {
-      font-family: var(--display); font-size: 1.05rem; font-weight: 400;
-      min-width: 200px; flex-shrink: 0; letter-spacing: -0.01em;
-    }
-    .use-case-desc {
-      font-family: var(--body); font-size: 0.8rem; color: var(--mid);
-      font-style: italic; line-height: 1.5;
-    }
-
-    /* ── DIFF — WHY BREAKWALLS ── */
-    .diff-section { border-top: 1px solid var(--rule); }
-    .diff-inner { padding: 80px 28px; }
-    .diff-grid {
-      display: grid; grid-template-columns: 1fr 1fr; gap: 0;
-      border-top: 1px solid var(--rule);
-    }
-    .diff-col { padding: 40px 40px 40px 0; border-right: 1px solid var(--rule); }
-    .diff-col:last-child { padding: 40px 0 40px 40px; border-right: none; }
-    .diff-col-label {
-      font-family: var(--sans); font-size: 0.65rem;
-      letter-spacing: 0.1em; text-transform: uppercase;
-      color: var(--mid); margin-bottom: 24px;
-    }
-    .diff-list { list-style: none; }
-    .diff-list li {
-      font-family: var(--body); font-size: 0.875rem;
-      color: var(--mid); padding: 12px 0;
-      border-bottom: 1px solid var(--rule); font-style: italic;
-    }
-    .diff-col:last-child .diff-list li { color: var(--text); font-style: normal; }
+    .use-case-name { font-family: var(--display); font-size: 1.05rem; font-weight: 400; min-width: 200px; flex-shrink: 0; letter-spacing: -0.01em; }
+    .use-case-desc { font-family: var(--body); font-size: 0.8rem; color: var(--mid); font-style: italic; line-height: 1.5; }
 
     /* ── PHILOSOPHY ── */
     .philosophy-section { border-top: 1px solid var(--rule); background: var(--faint); }
     .philosophy-inner { padding: 100px 28px; }
-    .philosophy-text {
-      font-family: var(--display);
-      font-size: clamp(2rem, 4vw, 4rem);
-      font-weight: 400; letter-spacing: -0.03em;
-      line-height: 1.08; max-width: 900px;
-    }
+    .philosophy-text { font-family: var(--display); font-size: clamp(2rem, 4vw, 4rem); font-weight: 400; letter-spacing: -0.03em; line-height: 1.08; max-width: 900px; }
     .philosophy-text em { font-style: italic; color: var(--mid); }
-    .philosophy-closer {
-      font-family: var(--display);
-      font-size: clamp(1.5rem, 3vw, 3rem);
-      font-weight: 400; font-style: italic;
-      letter-spacing: -0.03em; line-height: 1.1;
-      margin-top: 48px; color: var(--mid);
-    }
-
-    /* ── INSIGHTS ── */
-    .insights-section { border-top: 1px solid var(--rule); }
-    .insights-grid { display: grid; grid-template-columns: repeat(3,1fr); }
-    .insight-card {
-      padding: 40px 40px 40px 0; margin-right: 40px;
-      border-right: 1px solid var(--rule);
-    }
-    .insight-card:last-child { border-right: none; padding-right: 0; margin-right: 0; }
-    .insight-num {
-      font-family: var(--sans); font-size: 0.65rem;
-      color: var(--mid); margin-bottom: 16px; letter-spacing: 0.06em;
-    }
-    .insight-title {
-      font-family: var(--display); font-size: 1.2rem;
-      font-weight: 400; letter-spacing: -0.01em; line-height: 1.2;
-      cursor: default;
-    }
-    .insight-title em { font-style: italic; }
+    .philosophy-closer { font-family: var(--display); font-size: clamp(1.5rem, 3vw, 3rem); font-weight: 400; font-style: italic; letter-spacing: -0.03em; line-height: 1.1; margin-top: 48px; color: var(--mid); }
 
     /* ── FOUNDER ── */
     .founder-section { border-top: 1px solid var(--rule); display: grid; grid-template-columns: 1fr 1fr; }
@@ -369,19 +221,13 @@
       font-family: var(--sans); font-size: 0.75rem; letter-spacing: 0.04em;
       color: var(--text); text-decoration: underline; text-underline-offset: 3px;
       text-decoration-thickness: 1px; cursor: pointer; background: none;
-      border: none; padding: 0; transition: opacity 0.2s; display: inline;
-      font-weight: 400;
+      border: none; padding: 0; transition: opacity 0.2s; display: inline; font-weight: 400;
     }
     .text-link:hover { opacity: 0.45; }
 
     /* ── CTA ── */
     .cta-section { background: #071428; padding: 140px 28px; position: relative; overflow: hidden; }
-    .cta-glow {
-      position: absolute; top: -80px; left: 25%;
-      width: 900px; height: 500px;
-      background: radial-gradient(ellipse, rgba(240,255,30,0.06) 0%, rgba(160,20,20,0.07) 45%, transparent 70%);
-      filter: blur(80px); pointer-events: none;
-    }
+    .cta-glow { position: absolute; top: -80px; left: 25%; width: 900px; height: 500px; background: radial-gradient(ellipse, rgba(240,255,30,0.06) 0%, rgba(160,20,20,0.07) 45%, transparent 70%); filter: blur(80px); pointer-events: none; }
     .cta-inner { position: relative; z-index: 1; max-width: 860px; }
     .cta-overline { font-family: var(--sans); font-size: 0.68rem; letter-spacing: 0.1em; text-transform: uppercase; color: rgba(255,255,255,0.3); margin-bottom: 32px; }
     .cta-section h2 { font-family: var(--display); font-size: clamp(3.5rem, 8vw, 8rem); font-weight: 400; letter-spacing: -0.04em; line-height: 0.9; color: var(--white); margin-bottom: 36px; }
@@ -391,19 +237,18 @@
     .cta-text-link { font-family: var(--sans); font-size: 0.75rem; color: rgba(255,255,255,0.4); background: none; border: none; cursor: pointer; text-decoration: underline; text-underline-offset: 3px; text-decoration-color: rgba(255,255,255,0.2); transition: color 0.2s; }
     .cta-text-link:hover { color: rgba(255,255,255,0.8); }
 
-    /* ── LOGOS ── */
-    .logos-section { border-top: 1px solid var(--rule); padding: 48px 28px; }
-    .logos-label { font-family: var(--sans); font-size: 0.68rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--mid); margin-bottom: 28px; }
-    .logo-row { display: flex; align-items: center; gap: 56px; flex-wrap: wrap; }
-    .logo-item { text-decoration: none; display: flex; align-items: center; transition: filter 0.25s, opacity 0.25s; }
-    .logo-item img { height: 22px; width: auto; display: block; }
-    .logo-item-text { font-family: var(--display); font-size: 1.1rem; font-weight: 400; letter-spacing: 0.04em; color: #C0BCBA; transition: color 0.25s; }
-    /* mute all logos to same neutral tone */
-    .logo-img-dark { filter: grayscale(1) opacity(0.35); }
-    .logo-img-dark:hover { filter: grayscale(1) opacity(0.75); }
-    .logo-img-white { filter: invert(1) grayscale(1) opacity(0.35); }
-    .logo-img-white:hover { filter: invert(1) grayscale(1) opacity(0.75); }
-    .logo-item:hover .logo-item-text { color: var(--text); }
+    /* ── TEAM SECTION ── */
+    .team-section { border-top: 1px solid var(--rule); }
+    .team-inner { padding: 80px 28px; }
+    .team-member { display: grid; grid-template-columns: 240px 1fr; gap: 64px; align-items: start; padding: 48px 0; border-bottom: 1px solid var(--rule); }
+    .team-member:first-child { border-top: 1px solid var(--rule); }
+    .team-photo-wrap { width: 100%; aspect-ratio: 3/4; overflow: hidden; border-radius: 2px; margin-bottom: 20px; background: var(--faint); }
+    .team-photo { width: 100%; height: 100%; object-fit: cover; object-position: center top; display: block; }
+    .team-photo-initial { width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; font-family: var(--display); font-size: 3rem; font-weight: 300; color: var(--mid); background: var(--faint); }
+    .team-member-name { font-family: var(--display); font-size: clamp(1.6rem, 2.5vw, 2.4rem); font-weight: 400; letter-spacing: -0.03em; line-height: 1.0; margin-bottom: 8px; }
+    .team-member-name em { font-style: italic; color: var(--mid); }
+    .team-member-role { font-family: var(--sans); font-size: 0.7rem; color: var(--mid); margin-top: 4px; line-height: 1.5; }
+    .team-member-bio { font-family: var(--body); font-size: 0.875rem; color: var(--mid); line-height: 1.9; }
 
     /* ── ABOUT PAGE ── */
     .about-hero { padding: 80px 28px; border-bottom: 1px solid var(--rule); }
@@ -415,24 +260,10 @@
     .about-mission h2 { font-family: var(--display); font-size: clamp(2rem, 3.5vw, 3.5rem); font-weight: 400; letter-spacing: -0.03em; line-height: 1.05; }
     .about-mission h2 em { font-style: italic; }
     .about-mission p { font-family: var(--body); font-size: 0.875rem; color: var(--mid); line-height: 1.9; }
-
-    /* ── CONTACT PAGE ── */
-    .contact-hero { padding: 80px 28px; border-bottom: 1px solid var(--rule); }
-    .contact-hero h1 { font-family: var(--display); font-size: clamp(3rem, 7vw, 7.5rem); font-weight: 400; letter-spacing: -0.04em; line-height: 0.9; max-width: 900px; margin-bottom: 28px; }
-    .contact-hero h1 em { font-style: italic; }
-    .contact-hero p { font-family: var(--body); font-size: 0.9rem; color: var(--mid); max-width: 420px; line-height: 1.85; }
-    .contact-body { padding: 64px 28px 80px; display: grid; grid-template-columns: 240px 1fr; gap: 80px; border-top: 1px solid var(--rule); }
-    .contact-info-label { font-family: var(--sans); font-size: 0.68rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--mid); margin-bottom: 6px; }
-    .contact-info-value { font-family: var(--body); font-size: 0.9rem; color: var(--text); text-decoration: none; display: block; margin-bottom: 32px; transition: opacity 0.2s; }
-    .contact-info-value:hover { opacity: 0.45; }
-    form { display: flex; flex-direction: column; gap: 24px; }
-    .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
-    label { font-family: var(--sans); font-size: 0.65rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--mid); display: block; margin-bottom: 10px; }
-    input, select, textarea { width: 100%; background: transparent; border: none; border-bottom: 1px solid var(--rule); padding: 8px 0 10px; font-size: 0.875rem; font-family: var(--body); color: var(--text); outline: none; transition: border-color 0.2s; -webkit-appearance: none; border-radius: 0; }
-    input::placeholder, textarea::placeholder { color: #C0BCBA; }
-    input:focus, select:focus, textarea:focus { border-bottom-color: var(--text); }
-    textarea { resize: none; min-height: 120px; }
-    .form-success { display: none; font-family: var(--body); font-size: 0.82rem; font-style: italic; color: var(--mid); padding-top: 8px; border-top: 1px solid var(--rule); }
+    .about-contact { border-top: 1px solid var(--rule); padding: 64px 28px 80px; }
+    .about-contact-label { font-family: var(--sans); font-size: 0.68rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--mid); margin-bottom: 16px; }
+    .about-contact-email { font-family: var(--display); font-size: clamp(1.5rem, 3vw, 2.5rem); font-weight: 400; letter-spacing: -0.02em; color: var(--text); text-decoration: none; transition: opacity 0.2s; display: inline-block; }
+    .about-contact-email:hover { opacity: 0.45; }
 
     /* ── FOOTER ── */
     footer { padding: 20px 28px; border-top: 1px solid var(--rule); display: flex; justify-content: space-between; align-items: center; }
@@ -446,30 +277,29 @@
       .nav-email { display: none; }
       .hero-wordmark { font-size: clamp(56px, 17vw, 100px); }
       .hero-tagline-row { flex-direction: column; align-items: flex-start; padding: 0 16px; }
-      .proof-inner { gap: 24px; flex-direction: column; }
-      .proof-list { gap: 20px; }
+      .clients-inner { padding: 60px 16px; }
+      .clients-grid { grid-template-columns: 1fr; }
+      .client-card { border-right: none; border-bottom: 1px solid var(--rule); }
+      .client-card:last-child { border-bottom: none; }
       .section-inner { padding: 60px 16px; }
       .problem-grid { grid-template-columns: 1fr; gap: 40px; }
+      .founder-callout-inner { padding: 72px 16px; }
       .positioning-inner { padding: 72px 16px; }
       .process-grid { grid-template-columns: 1fr 1fr; gap: 40px; }
       .process-card { border-right: none; padding-right: 0; margin-right: 0; }
       .use-cases-grid { grid-template-columns: 1fr; }
       .use-case-row { padding: 20px 0 !important; border-right: none !important; padding-left: 0 !important; padding-right: 0 !important; }
-      .diff-inner { padding: 60px 16px; }
-      .diff-grid { grid-template-columns: 1fr; }
-      .diff-col { border-right: none; padding: 32px 0; }
       .philosophy-inner { padding: 72px 16px; }
-      .insights-grid { grid-template-columns: 1fr; }
-      .insight-card { border-right: none; padding: 32px 0; margin-right: 0; border-bottom: 1px solid var(--rule); }
       .founder-section { grid-template-columns: 1fr; }
       .founder-photo-col { aspect-ratio: 4/3; border-right: none; border-bottom: 1px solid var(--rule); }
       .founder-text-col { padding: 40px 16px; }
       .cta-section { padding: 80px 16px; }
-      .logos-section { padding: 40px 16px; }
-      .about-hero, .contact-hero { padding: 60px 16px; }
+      .team-inner { padding: 60px 16px; }
+      .team-member { grid-template-columns: 1fr; gap: 32px; }
+      .team-photo-wrap { max-width: 200px; }
+      .about-hero { padding: 60px 16px; }
       .about-mission { grid-template-columns: 1fr; gap: 40px; padding: 60px 16px; }
-      .contact-body { grid-template-columns: 1fr; gap: 40px; padding: 48px 16px; }
-      .form-row { grid-template-columns: 1fr; }
+      .about-contact { padding: 48px 16px 60px; }
       footer { flex-direction: column; gap: 10px; padding: 20px 16px; text-align: center; }
     }
   </style>
@@ -478,7 +308,7 @@
 
 <!-- ANNOUNCE BAR -->
 <div id="announce-bar">
-  <p>Installing AI for four-wall businesses — <a href="#" onclick="showPage('contact'); closeBar(); return false;">Book a strategy call</a></p>
+  <p>AI infrastructure for multi-location businesses — <a href="mailto:hello@breakwalls.ai" onclick="closeBar()">Book a strategy call</a></p>
   <button class="announce-close" onclick="closeBar()" aria-label="Close">&#x2715;</button>
 </div>
 
@@ -488,11 +318,10 @@
     <ul class="nav-links">
       <li><a href="#" onclick="showPage('home')" id="nav-home" class="active">Home</a></li>
       <li><a href="#" onclick="showPage('about')" id="nav-about">About</a></li>
-      <li><a href="#" onclick="showPage('contact')" id="nav-contact">Contact</a></li>
     </ul>
     <div class="nav-right">
       <a href="mailto:hello@breakwalls.ai" class="nav-email">hello@breakwalls.ai</a>
-      <button class="nav-cta" onclick="showPage('contact')">Book a strategy call</button>
+      <a href="mailto:hello@breakwalls.ai" class="nav-cta">Book a strategy call</a>
     </div>
   </nav>
 </div>
@@ -508,26 +337,71 @@
     <div class="hero-text">
       <span class="hero-wordmark">Break<em>walls</em></span>
       <div class="hero-tagline-row">
-        <p class="hero-tagline">Your AI brain for<br>four-wall businesses.</p>
+        <div>
+          <p class="hero-tagline">AI infrastructure for<br>multi-location businesses.</p>
+          <p class="hero-sub">We install systems that run your operations more efficiently—without adding headcount.</p>
+          <p class="hero-micro">Reduce staffing inefficiency · Predict revenue · Prevent churn · Automate decisions</p>
+        </div>
         <div class="hero-ctas">
-          <button class="btn-yellow" onclick="showPage('contact')">Book a strategy call</button>
+          <a href="mailto:hello@breakwalls.ai" class="btn-yellow">Book a strategy call</a>
           <button class="btn-ghost-white" onclick="document.getElementById('how-it-works').scrollIntoView({behavior:'smooth'})">See how it works</button>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- SUB-HERO PROOF -->
-  <section class="proof-section">
-    <div class="proof-inner">
-      <p class="proof-label">Built for operators running</p>
-      <ul class="proof-list">
-        <li>Clinics</li>
-        <li>Studios</li>
-        <li>Fitness concepts</li>
-        <li>Retail locations</li>
-        <li>Multi-unit service businesses</li>
-      </ul>
+  <!-- PREVIOUS CLIENTS -->
+  <section class="clients-section">
+    <div class="clients-inner">
+      <p class="section-label">Previous Clients</p>
+      <p class="clients-desc">Built for operators running clinics, studios, and multi-unit service businesses.</p>
+      <div class="clients-grid">
+        <a class="client-card" href="https://wthn.com" target="_blank" rel="noopener">
+          <div class="client-card-img-wrap">
+            <img class="client-card-img" src="https://wthn.com/cdn/shop/files/Studio_003_1_1.jpg?v=1742877815&width=600" alt="WTHN studio" />
+          </div>
+          <div class="client-card-info">
+            <img src="https://wthn.com/cdn/shop/files/logo-black_1.svg?v=1738350238&width=160" alt="WTHN" class="client-card-logo-img" />
+            <span class="client-card-link">wthn.com →</span>
+          </div>
+        </a>
+        <a class="client-card" href="https://myodetox.com" target="_blank" rel="noopener">
+          <div class="client-card-img-wrap">
+            <img class="client-card-img" src="https://cdn.prod.website-files.com/67aba7ba87a33fd26ae9bcd7/67e7f478ad9a5c8ee0b9027e_first-myo-session.avif" alt="Myodetox session" />
+          </div>
+          <div class="client-card-info">
+            <img src="myo-logo.png" alt="Myodetox" class="client-card-logo-img" />
+            <span class="client-card-link">myodetox.com →</span>
+          </div>
+        </a>
+        <a class="client-card" href="https://formulafig.com" target="_blank" rel="noopener">
+          <div class="client-card-img-wrap">
+            <img class="client-card-img" src="https://formulafig.com/cdn/shop/files/HP-Treatments-Bespoke_large.png?v=1741189749" alt="Formula Fig treatment" />
+          </div>
+          <div class="client-card-info">
+            <img src="https://formulafig.com/cdn/shop/t/50/assets/_ff-single.svg?v=117796149515987093931680535047" alt="Formula Fig" class="client-card-logo-img" />
+            <span class="client-card-link">formulafig.com →</span>
+          </div>
+        </a>
+        <a class="client-card" href="https://hellobrella.com" target="_blank" rel="noopener">
+          <div class="client-card-img-wrap">
+            <img class="client-card-img" src="https://hellobrella.com/wp-content/uploads/2021/12/Rectangle-24440@2x.jpg" alt="Brella" />
+          </div>
+          <div class="client-card-info">
+            <img src="https://hellobrella.com/wp-content/uploads/2021/11/logo.svg" alt="Brella" class="client-card-logo-img" />
+            <span class="client-card-link">hellobrella.com →</span>
+          </div>
+        </a>
+        <a class="client-card" href="https://www.forgetmenotcafemn.com" target="_blank" rel="noopener">
+          <div class="client-card-img-wrap">
+            <img class="client-card-img" src="https://blogto-production2-baselayer-display.blogto.com/articles/20250411-banana-bread-matcha-2.jpeg?w=600&cmd=resize_then_crop&height=800&format=auto" alt="Forget Me Not Cafe" />
+          </div>
+          <div class="client-card-info">
+            <img src="https://images.getbento.com/accounts/310270ef5c083073597e24b3e97cf3bc/media/images/91462logo.png" alt="Forget Me Not" class="client-card-logo-img" />
+            <span class="client-card-link">forgetmenotcafe →</span>
+          </div>
+        </a>
+      </div>
     </div>
   </section>
 
@@ -537,45 +411,85 @@
       <p class="section-label">The Problem</p>
       <div class="problem-grid">
         <div>
-          <h2 class="problem-headline">Four-wall businesses are drowning in <em>friction.</em></h2>
-          <p class="problem-closer">You don't need more tools.<br>You need a system that thinks.</p>
+          <h2 class="problem-headline">Most four-wall businesses are still run on <em>guesswork.</em></h2>
+          <p class="problem-closer">More tools don't fix this.<br>They make it worse.</p>
         </div>
         <div class="problem-right">
           <ul class="problem-list">
-            <li>Staffing is inconsistent</li>
-            <li>Scheduling is reactive</li>
-            <li>Revenue is unpredictable</li>
-            <li>Data lives everywhere — and nowhere</li>
+            <li>Staffing is reactive.</li>
+            <li>Scheduling breaks under pressure.</li>
+            <li>Revenue is unpredictable.</li>
+            <li>Data is fragmented across systems.</li>
           </ul>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- POSITIONING -->
-  <section class="positioning-section">
-    <div class="positioning-inner">
-      <p class="positioning-label">What we build</p>
-      <h2 class="positioning-headline">We build your<br><em>AI brain.</em></h2>
-      <p class="positioning-not">Not dashboards. Not reports. A living system that:</p>
-      <ul class="positioning-list">
-        <li>Learns how your business operates</li>
-        <li>Identifies inefficiencies in real time</li>
-        <li>Automates decisions that used to require hours</li>
-        <li>Surfaces exactly what matters — when it matters</li>
-      </ul>
+  <!-- FOUNDER CALLOUT -->
+  <section class="founder-callout-section">
+    <div class="founder-callout-inner">
+      <p class="founder-callout-overline">For the operator</p>
+      <h2 class="founder-callout-headline">Are you a four-wall founder?<br><em>Don't fall behind.</em></h2>
+      <p class="founder-callout-body">Learning how to implement AI is a full-time job — and you already have one of those. We map your operations, build the systems, and run them alongside your team. You stay focused on what you built.</p>
+      <a href="mailto:hello@breakwalls.ai" class="btn-yellow">Let's talk</a>
     </div>
   </section>
 
-  <!-- PROCESS -->
+  <!-- SOLUTION -->
+  <section class="positioning-section">
+    <div class="positioning-inner">
+      <p class="positioning-label">The Solution</p>
+      <h2 class="positioning-headline">Breakwalls installs your<br><em>AI operating system.</em></h2>
+      <p class="positioning-not">A layer that sits across your business and:</p>
+      <ul class="positioning-list">
+        <li>Understands how your locations actually run</li>
+        <li>Identifies inefficiencies in real time</li>
+        <li>Automates decisions that used to take hours</li>
+        <li>Surfaces what matters—when it matters</li>
+      </ul>
+      <p class="positioning-closer">This isn't reporting.<br>It's operational intelligence.</p>
+    </div>
+  </section>
+
+  <!-- WHAT THIS LOOKS LIKE -->
+  <section class="section" style="background: var(--faint);">
+    <div class="section-inner">
+      <p class="section-label">We focus on the systems that directly impact revenue and margin.</p>
+      <div class="use-cases-grid">
+        <div class="use-case-row">
+          <span class="use-case-name">Staffing Optimization</span>
+          <span class="use-case-desc">Reduce over- and under-staffing across locations</span>
+        </div>
+        <div class="use-case-row">
+          <span class="use-case-name">Revenue Forecasting</span>
+          <span class="use-case-desc">Know your week before it happens</span>
+        </div>
+        <div class="use-case-row">
+          <span class="use-case-name">Retention Intelligence</span>
+          <span class="use-case-desc">Identify churn before it shows up in your numbers</span>
+        </div>
+        <div class="use-case-row">
+          <span class="use-case-name">Marketing Automation</span>
+          <span class="use-case-desc">Allocate spend based on actual performance</span>
+        </div>
+        <div class="use-case-row" style="border-bottom:none;">
+          <span class="use-case-name">Multi-Location Visibility</span>
+          <span class="use-case-desc">See what's working—by location, in real time</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- HOW IT WORKS -->
   <section class="section" id="how-it-works">
     <div class="section-inner">
-      <p class="section-label">We don't sell AI. We install leverage.</p>
+      <p class="section-label">We don't sell software. We install leverage.</p>
       <div class="process-grid">
         <div class="process-card">
           <p class="process-num">1</p>
           <h3 class="process-title">Diagnose</h3>
-          <p class="process-subtitle">We map your business</p>
+          <p class="process-subtitle">We map your revenue drivers, constraints, and inefficiencies</p>
           <ul class="process-items">
             <li>Revenue drivers</li>
             <li>Bottlenecks</li>
@@ -585,7 +499,7 @@
         <div class="process-card">
           <p class="process-num">2</p>
           <h3 class="process-title">Design</h3>
-          <p class="process-subtitle">We architect your AI system</p>
+          <p class="process-subtitle">We architect your AI system across workflows, data, and decisions</p>
           <ul class="process-items">
             <li>Custom workflows</li>
             <li>Decision layers</li>
@@ -595,7 +509,7 @@
         <div class="process-card">
           <p class="process-num">3</p>
           <h3 class="process-title">Deploy</h3>
-          <p class="process-subtitle">We integrate into your stack</p>
+          <p class="process-subtitle">We integrate directly into your existing stack (POS, CRM, scheduling, marketing)</p>
           <ul class="process-items">
             <li>POS</li>
             <li>CRM</li>
@@ -605,8 +519,8 @@
         </div>
         <div class="process-card">
           <p class="process-num">4</p>
-          <h3 class="process-title">Evolve</h3>
-          <p class="process-subtitle">Your system gets smarter</p>
+          <h3 class="process-title">Operate</h3>
+          <p class="process-subtitle">We refine and improve the system as your business evolves</p>
           <ul class="process-items">
             <li>Better predictions</li>
             <li>Faster decisions</li>
@@ -617,114 +531,28 @@
     </div>
   </section>
 
-  <!-- USE CASES -->
-  <section class="section" style="background: var(--faint);">
-    <div class="section-inner">
-      <p class="section-label">Where Breakwalls shows up immediately</p>
-      <div class="use-cases-grid">
-        <div class="use-case-row">
-          <span class="use-case-name">Staffing optimization</span>
-          <span class="use-case-desc">Reduce over/under staffing</span>
-        </div>
-        <div class="use-case-row">
-          <span class="use-case-name">Revenue forecasting</span>
-          <span class="use-case-desc">Know your week before it happens</span>
-        </div>
-        <div class="use-case-row">
-          <span class="use-case-name">Retention systems</span>
-          <span class="use-case-desc">Catch churn before it happens</span>
-        </div>
-        <div class="use-case-row">
-          <span class="use-case-name">Marketing automation</span>
-          <span class="use-case-desc">Smarter spend, better conversion</span>
-        </div>
-        <div class="use-case-row" style="border-bottom:none;">
-          <span class="use-case-name">Multi-location intelligence</span>
-          <span class="use-case-desc">See what's working where</span>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- DIFFERENTIATION -->
-  <section class="diff-section">
-    <div class="diff-inner">
-      <p class="section-label">Why Breakwalls</p>
-      <div class="diff-grid">
-        <div class="diff-col">
-          <p class="diff-col-label">Most AI companies</p>
-          <ul class="diff-list">
-            <li>Sell tools</li>
-            <li>Require internal teams</li>
-            <li>Add complexity</li>
-          </ul>
-        </div>
-        <div class="diff-col">
-          <p class="diff-col-label">We</p>
-          <ul class="diff-list">
-            <li>Build systems for operators</li>
-            <li>Focus on real-world execution — not theory</li>
-            <li>Replace manual thinking with intelligent infrastructure</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- PHILOSOPHY -->
+  <!-- POSITIONING STATEMENT -->
   <section class="philosophy-section">
     <div class="philosophy-inner">
       <p class="philosophy-text">
-        We believe the next great businesses won't be bigger.<br>
-        They'll be <em>smarter.</em>
+        The next generation of businesses won't be bigger.<br>
+        They'll be <em>more intelligent.</em>
       </p>
       <p class="philosophy-closer">
-        AI isn't a feature.<br>It's your operating system.
+        AI is not a feature.<br>It's your operating system.
       </p>
-    </div>
-  </section>
-
-  <!-- INSIGHTS -->
-  <section class="insights-section">
-    <div class="section-inner">
-      <p class="section-label">What we're seeing</p>
-      <div class="insights-grid">
-        <div class="insight-card">
-          <p class="insight-num">01</p>
-          <h3 class="insight-title">Why most locations lose<br>margin <em>invisibly</em></h3>
-        </div>
-        <div class="insight-card">
-          <p class="insight-num">02</p>
-          <h3 class="insight-title">The hidden cost of<br><em>reactive scheduling</em></h3>
-        </div>
-        <div class="insight-card">
-          <p class="insight-num">03</p>
-          <h3 class="insight-title">The future of<br><em>operator-led AI</em></h3>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- LOGOS -->
-  <section class="logos-section">
-    <p class="logos-label">Leaders from</p>
-    <div class="logo-row">
-      <a class="logo-item" href="https://myodetox.com" target="_blank" rel="noopener"><span class="logo-item-text">Myodetox</span></a>
-      <a class="logo-item" href="https://wthn.com" target="_blank" rel="noopener"><img class="logo-img-dark" src="https://wthn.com/cdn/shop/files/logo-black_1.svg?v=1738350238&width=160" alt="WTHN" /></a>
-      <a class="logo-item" href="https://formulafig.com" target="_blank" rel="noopener"><img class="logo-img-dark" src="https://formulafig.com/cdn/shop/t/50/assets/_ff-single.svg?v=117796149515987093931680535047" alt="Formula Fig" /></a>
-      <a class="logo-item" href="https://brella.com" target="_blank" rel="noopener"><img class="logo-img-white" src="https://brella.com/wp-content/uploads/2024/02/Br_White_RGB.png" alt="Brella" /></a>
     </div>
   </section>
 
   <!-- FOUNDER -->
   <section class="founder-section">
     <div class="founder-photo-col">
-      <img src="headshot.jpg" alt="Jane Lee" class="founder-photo" />
+      <img src="https://miro.medium.com/v2/resize:fill:800:800/1*nXhySlYIwfuzhITzdYDS2Q.jpeg" alt="Jane Lee" class="founder-photo" />
     </div>
     <div class="founder-text-col">
       <p class="founder-overline">Founded by</p>
       <h2 class="founder-name">Jane <em>Lee</em></h2>
-      <p class="founder-sub">Founder &amp; CEO — Formerly Myodetox (CMO)</p>
+      <p class="founder-sub">Founder &amp; CEO</p>
       <p class="founder-body">A decade of building brands from the inside out — from General Mills and Pepsi to founding and exiting her own consumer brand, co-founding Launch Pop (8 years scaling CPG founders), and holding operating roles as Head of Growth at Myodetox and CMO at WTHN. She has advised Formula Fig and currently serves as Operating Partner at Maple VC. Jane works at the intersection of brand, product, and growth — thinking strategically and executing alongside the team. Breakwalls is where that operator experience meets AI.</p>
       <a href="https://www.linkedin.com/in/janelee16/" target="_blank" rel="noopener" class="text-link">LinkedIn →</a>
     </div>
@@ -734,12 +562,12 @@
   <section class="cta-section">
     <div class="cta-glow"></div>
     <div class="cta-inner">
-      <p class="cta-overline">Install your AI brain</p>
-      <h2>If you feel<br>the friction —<br><em>we'll find it.</em></h2>
-      <p class="cta-sub">If you're running a four-wall business and feel the friction — we'll show you exactly where AI unlocks leverage.</p>
+      <p class="cta-overline">Install your AI infrastructure</p>
+      <h2>Install your AI<br><em>infrastructure.</em></h2>
+      <p class="cta-sub">If you're running a multi-location business and feeling operational drag, we'll show you exactly where AI unlocks leverage.</p>
       <div class="cta-actions">
-        <button class="btn-yellow" onclick="showPage('contact')">Book a strategy call</button>
-        <button class="cta-text-link" onclick="showPage('about')">Meet the founder</button>
+        <a href="mailto:hello@breakwalls.ai" class="btn-yellow">Book a strategy call</a>
+        <button class="cta-text-link" onclick="showPage('about')">Meet the team</button>
       </div>
     </div>
   </section>
@@ -752,20 +580,50 @@
 
   <section class="about-hero">
     <p class="page-label">About</p>
-    <h1>Built by an operator<br>who has been<br><em>in the room.</em></h1>
-    <p>Not a consultant who theorizes about your business — someone who has actually scaled health and wellness brands from the inside and knows exactly where the friction is.</p>
+    <h1>Built by operators<br>who have been<br><em>in the room.</em></h1>
+    <p>Not consultants who theorize about your business — people who have actually scaled health and wellness brands from the inside and know exactly where the friction is.</p>
   </section>
 
-  <section class="founder-section" style="border-top: 1px solid var(--rule);">
-    <div class="founder-photo-col">
-      <img src="headshot.jpg" alt="Jane Lee" class="founder-photo" />
-    </div>
-    <div class="founder-text-col">
-      <p class="founder-overline">Founder &amp; CEO</p>
-      <h2 class="founder-name">Jane <em>Lee</em></h2>
-      <p class="founder-sub">Breakwalls — Formerly Myodetox (CMO)</p>
-      <p class="founder-body">A decade of building brands from the inside out — from General Mills and Pepsi to founding and exiting her own consumer brand, co-founding Launch Pop (8 years scaling CPG founders), and holding operating roles as Head of Growth at Myodetox and CMO at WTHN. She has advised Formula Fig and currently serves as Operating Partner at Maple VC. Jane works at the intersection of brand, product, and growth — thinking strategically and executing alongside the team. Breakwalls is where that operator experience meets AI.</p>
-      <a href="https://www.linkedin.com/in/janelee16/" target="_blank" rel="noopener" class="text-link">LinkedIn →</a>
+  <section class="team-section">
+    <div class="team-inner">
+      <p class="section-label">The Team</p>
+
+      <div class="team-member">
+        <div>
+          <div class="team-photo-wrap">
+            <img class="team-photo" src="https://miro.medium.com/v2/resize:fill:800:800/1*nXhySlYIwfuzhITzdYDS2Q.jpeg" alt="Jane Lee" />
+          </div>
+          <h2 class="team-member-name">Jane <em>Lee</em></h2>
+          <p class="team-member-role">Founder &amp; CEO</p>
+          <a href="https://www.linkedin.com/in/janelee16/" target="_blank" rel="noopener" class="text-link" style="margin-top: 14px; display: inline-block;">LinkedIn →</a>
+        </div>
+        <p class="team-member-bio">A decade of building brands from the inside out — from General Mills and Pepsi to founding and exiting her own consumer brand, co-founding Launch Pop (8 years scaling CPG founders), and holding operating roles as Head of Growth at Myodetox and CMO at WTHN. She has advised Formula Fig and currently serves as Operating Partner at Maple VC. Jane works at the intersection of brand, product, and growth — thinking strategically and executing alongside the team. Breakwalls is where that operator experience meets AI.</p>
+      </div>
+
+      <div class="team-member">
+        <div>
+          <div class="team-photo-wrap">
+            <img class="team-photo" src="anthea.jpg" alt="Anthea Cheng" />
+          </div>
+          <h2 class="team-member-name">Anthea <em>Cheng</em></h2>
+          <p class="team-member-role">Growth &amp; Performance Marketing — Formerly Myodetox</p>
+          <a href="https://www.linkedin.com/in/antheacheng/" target="_blank" rel="noopener" class="text-link" style="margin-top: 14px; display: inline-block;">LinkedIn →</a>
+        </div>
+        <p class="team-member-bio">Performance marketer with a deep fluency in data, growth systems, and digital acquisition. Previously at Myodetox, where she built and scaled performance marketing across channels. She brings analytical rigour and a builder's instinct to how Breakwalls deploys and measures AI systems for operator-led businesses.</p>
+      </div>
+
+      <div class="team-member">
+        <div>
+          <div class="team-photo-wrap">
+            <img class="team-photo" src="joolee.jpg" alt="Joolee Youn" />
+          </div>
+          <h2 class="team-member-name">Joolee <em>Youn</em></h2>
+          <p class="team-member-role">Director of Marketing, Formula Fig — CEO, Forget Me Not Cafe</p>
+          <a href="https://www.linkedin.com/in/joolee-youn-389556145/" target="_blank" rel="noopener" class="text-link" style="margin-top: 14px; display: inline-block;">LinkedIn →</a>
+        </div>
+        <p class="team-member-bio">Brand strategist and operator with hands-on experience building businesses from the ground up. Currently Director of Marketing at Formula Fig, one of Canada's fastest-growing aesthetics brands. She is also the founder and CEO of Forget Me Not Cafe in Toronto — a viral destination known for blending Korean lifestyle retail with specialty coffee. Joolee brings real operator perspective to how AI infrastructure gets built and adopted inside growing businesses.</p>
+      </div>
+
     </div>
   </section>
 
@@ -774,97 +632,9 @@
     <p>Breakwalls exists to close that gap. Most AI tools are built for tech companies. We translate cutting-edge systems into practical, deployable solutions for studios, clinics, spas, and wellness brands — businesses where the experience happens in person, but the leverage comes from smart infrastructure built behind the scenes.</p>
   </section>
 
-  <section class="logos-section" style="border-top: 1px solid var(--rule);">
-    <p class="logos-label">Leaders from</p>
-    <div class="logo-row">
-      <a class="logo-item" href="https://myodetox.com" target="_blank" rel="noopener"><span class="logo-item-text">Myodetox</span></a>
-      <a class="logo-item" href="https://wthn.com" target="_blank" rel="noopener"><img class="logo-img-dark" src="https://wthn.com/cdn/shop/files/logo-black_1.svg?v=1738350238&width=160" alt="WTHN" /></a>
-      <a class="logo-item" href="https://formulafig.com" target="_blank" rel="noopener"><img class="logo-img-dark" src="https://formulafig.com/cdn/shop/t/50/assets/_ff-single.svg?v=117796149515987093931680535047" alt="Formula Fig" /></a>
-      <a class="logo-item" href="https://brella.com" target="_blank" rel="noopener"><img class="logo-img-white" src="https://brella.com/wp-content/uploads/2024/02/Br_White_RGB.png" alt="Brella" /></a>
-    </div>
-  </section>
-
-  <section class="cta-section">
-    <div class="cta-glow"></div>
-    <div class="cta-inner">
-      <p class="cta-overline">Let's build together</p>
-      <h2>Ready to transform<br>how your <em>business runs?</em></h2>
-      <p class="cta-sub">We work with a select number of brands at a time. If you're serious about building your AI operating system, let's talk.</p>
-      <div class="cta-actions">
-        <button class="btn-yellow" onclick="showPage('contact')">Book a strategy call</button>
-      </div>
-    </div>
-  </section>
-
-</div>
-
-
-<!-- ════════════ CONTACT ════════════ -->
-<div id="page-contact" class="page">
-
-  <section class="contact-hero">
-    <p class="page-label">Contact</p>
-    <h1>Install your<br><em>AI brain.</em></h1>
-    <p>If you're running a four-wall business and feel the friction — we'll show you exactly where AI unlocks leverage.</p>
-  </section>
-
-  <div class="contact-body">
-    <div>
-      <p class="contact-info-label">Email</p>
-      <a href="mailto:hello@breakwalls.ai" class="contact-info-value">hello@breakwalls.ai</a>
-      <p class="contact-info-label">LinkedIn</p>
-      <a href="https://www.linkedin.com/in/janelee16/" target="_blank" rel="noopener" class="contact-info-value">Connect →</a>
-      <p class="contact-info-label">Based in</p>
-      <span class="contact-info-value">North America</span>
-    </div>
-    <form onsubmit="handleSubmit(event)">
-      <div class="form-row">
-        <div>
-          <label for="fname">First Name</label>
-          <input type="text" id="fname" name="fname" required placeholder="Jane" />
-        </div>
-        <div>
-          <label for="lname">Last Name</label>
-          <input type="text" id="lname" name="lname" required placeholder="Smith" />
-        </div>
-      </div>
-      <div>
-        <label for="email">Email</label>
-        <input type="email" id="email" name="email" required placeholder="you@yourbrand.com" />
-      </div>
-      <div>
-        <label for="business">Business</label>
-        <input type="text" id="business" name="business" placeholder="Your studio, clinic, or brand" />
-      </div>
-      <div>
-        <label for="interest">Area of Interest</label>
-        <select id="interest" name="interest">
-          <option value="">Select one</option>
-          <option>Operations</option>
-          <option>Reporting &amp; Analytics</option>
-          <option>Marketing Systems</option>
-          <option>Software Integration</option>
-          <option>Full AI Tech Stack</option>
-        </select>
-      </div>
-      <div>
-        <label for="message">Tell us about your business</label>
-        <textarea id="message" name="message" placeholder="What does your business look like today, and where do you feel the most friction?"></textarea>
-      </div>
-      <button type="submit" class="text-link">Send message →</button>
-      <div class="form-success" id="form-success">
-        Thank you — we will be in touch within one to two business days.
-      </div>
-    </form>
-  </div>
-
-  <section class="cta-section">
-    <div class="cta-glow"></div>
-    <div class="cta-inner">
-      <p class="cta-overline">Breakwalls</p>
-      <h2>The future of wellness<br>is <em>AI-native.</em></h2>
-      <p class="cta-sub">We are helping the brands that get there first.</p>
-    </div>
+  <section class="about-contact">
+    <p class="about-contact-label">Contact</p>
+    <a href="mailto:hello@breakwalls.ai" class="about-contact-email">hello@breakwalls.ai</a>
   </section>
 
 </div>
@@ -881,18 +651,14 @@
     document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
     document.querySelectorAll('.nav-links a').forEach(a => a.classList.remove('active'));
     document.getElementById('page-' + name).classList.add('active');
-    document.getElementById('nav-' + name).classList.add('active');
+    const navEl = document.getElementById('nav-' + name);
+    if (navEl) navEl.classList.add('active');
     window.scrollTo({ top: 0, behavior: 'smooth' });
     return false;
   }
   function closeBar() {
     const b = document.getElementById('announce-bar');
     if (b) b.remove();
-  }
-  function handleSubmit(e) {
-    e.preventDefault();
-    document.getElementById('form-success').style.display = 'block';
-    e.target.querySelectorAll('input, select, textarea, button').forEach(el => el.disabled = true);
   }
 </script>
 
